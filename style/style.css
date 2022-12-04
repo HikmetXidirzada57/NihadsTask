@@ -44,6 +44,30 @@
   top: 5%;
 }
 
+.myInput, .myInputL, .myInputLit {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.myInput.activeInput, .myInputL.activeInput, .myInputLit.activeInput {
+  visibility: visible;
+  opacity: 1;
+}
+
+.searchLat {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.searchLat.activeBtn {
+  visibility: visible;
+  opacity: 1;
+}
+
 .lattide .alert {
   left: -100%;
   padding: 0px;

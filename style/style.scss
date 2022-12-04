@@ -43,6 +43,26 @@
 
 }
 
+.myInput,.myInputL,.myInputLit{
+    transition: 0.2s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    &.activeInput {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+.searchLat{
+   transition: 0.2s ease-in-out;
+   visibility: hidden;
+   opacity: 0;
+    &.activeBtn{
+        visibility: visible;
+        opacity: 1;
+    }
+}
 .lattide {
     .alert {
         left: -100%;

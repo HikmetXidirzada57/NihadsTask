@@ -14,18 +14,44 @@
 <body>
 
   <section id="weather-section">
-    <div class="container pt-5"> -->
-      <div class="row justify-content-end">
-        <div class="col-lg-6">
-          <h4 style="color: #fff; font-weight: 600; font-family: 'Times New Roman', Times, serif;"> The Weather</h4>
-        </div>
-        <div class="col-lg-6 d-flex">
-          <input type="text" placeholder="Enter the city" class="input_text form-control">
-          <input type="submit" value="Submit" class="submit btn btn-success">
-        </div>
-
+    <div class="form-check form-switch pt-4">
+      <div class="mb-2">
+        <input class="form-check-input" type="checkbox" id="nameCheck">
+        <label style="color: white;" class="form-check-label" for="flexSwitchCheckDefault">Activate - <b>Name</b>
+          input</label>
       </div>
+      
+      <div class="mb-2">
+        <input class="form-check-input" type="checkbox" id="latCheck">
+        <label style="color: white;" class="form-check-label" for="flexSwitchCheckDefault">Activate- <b>Lat</b>input</label>
+      </div>
+      <!-- <div>
+        <input class="form-check-input" type="checkbox" id="litCheck">
+        <label style="color: white;" class="form-check-label" for="flexSwitchCheckDefault">Activate-<b>Lit</b>
+          input</label>
+      </div> -->
     </div>
+      <div class="container pt-5">
+        <div class="row justify-content-end">
+          <div class="col-lg-6">
+            <h4 style="color: #fff; font-weight: 600; font-family: 'Times New Roman', Times, serif;"> The Weather</h4>
+          </div>
+          <div class=" myInput col-lg-6 d-flex">
+            <input type="text" placeholder="Enter the city" class="input_text form-control">
+            <input type="submit" value="Search" class="searchName btn btn-success">
+          </div>
+          <div class="d-flex">
+            <div class="myInputL col-lg-3 d-flex">
+              <input type="text" placeholder="Enter lattitude" class="input_textL form-control">
+            </div>
+            <div class="myInputLit col-lg-3 d-flex">
+              <input type="text" placeholder="Enter littitude" class="input_textLit form-control">
+            </div>
+            <button class="searchLat btn btn-success" type="submit">Search</button>
+          </div>
+ 
+        </div>
+      </div>
     </div>
     </div>
     <div class="container">
@@ -35,10 +61,12 @@
             <li class="name list-group-item disabled"></li>
             <li class="temp list-group-item"></li>
             <li class="desc list-group-item"></li>
-            <li class="lat list-group-item"></li>
-            <li class="lit list-group-item"></li>
-            <li class="temp list-group-item"></li>
-            <li class="list list-group-item"></li>
+            <li class="descMain list-group-item"></li>
+            <li class="hum list-group-item"></li>
+            <li class="speed list-group-item"></li>
+            <li class="degree list-group-item"></li>
+            <li class="pressure list-group-item"></li>
+            <li class="time list-group-item"></li>
           </ul>
         </div>
       </div>
