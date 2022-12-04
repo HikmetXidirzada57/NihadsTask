@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OpenWeatherMap Api</title>
+
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+  <section id="weather-section">
+    <div class="container pt-5"> -->
+      <div class="row justify-content-end">
+        <div class="col-lg-6">
+          <h4 style="color: #fff; font-weight: 600; font-family: 'Times New Roman', Times, serif;"> The Weather</h4>
+        </div>
+        <div class="col-lg-6 d-flex">
+          <input type="text" placeholder="Enter the city" class="input_text form-control">
+          <input type="submit" value="Submit" class="submit btn btn-success">
+        </div>
+
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-end pt-4">
+        <div class="col-lg-6">
+          <ul class="list-group">
+            <li class="name list-group-item disabled"></li>
+            <li class="temp list-group-item"></li>
+            <li class="desc list-group-item"></li>
+            <li class="lat list-group-item"></li>
+            <li class="lit list-group-item"></li>
+            <li class="temp list-group-item"></li>
+            <li class="list list-group-item"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="lattide col-lg-4">
+      <p class="myInfo alert alert-success" id="demo"></p>
+      <button onclick="getLocation()" class="btn btn-primary">Get Location</button>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
